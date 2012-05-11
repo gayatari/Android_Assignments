@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SocialAppActivity!</string>
+    <string name="app_name">SocialApp</string>
+    <string name="fname">First Name:</string>
+    <string name="lname">Last Name:</string>
+    <string name="email">Email Id:</string>
+     <string name="birth">Date of Birth:</string>
+     <string name="school">School Name:</string>
+      <string name="collage">Collage Name:</string>
+          
+<string name="save">Save</string>
+         <string name="user">Username:</string>
+          <string name="pass">Password:</string>
+          <string name="login">Login</string>
+          <string name="radio_male">Male</string>
+          <string name="radio_female">Female</string>
+          <string name="gender">Select you Gender:</string>
+           
+</resources>

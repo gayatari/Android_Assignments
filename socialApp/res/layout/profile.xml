@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstName"
+        android:text="@string/fname" />
+
+    <EditText
+        android:id="@+id/FirstName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstName"
+        android:inputType="textPersonName"/>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastName"
+        android:text="@string/lname" 
+        android:layout_below="@+id/FirstName"/>
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LastName" 
+        android:layout_below="@+id/lastName"
+        android:inputType="textPersonName"
+        />
+        
+        
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailId"
+        android:text="@string/email" 
+        android:layout_below="@+id/LastName" />
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EmailId"
+        android:layout_below="@+id/emailId" 
+        android:inputType="textEmailAddress"/>
+     <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/birthDate"
+        android:text="@string/birth"
+        android:layout_below="@+id/EmailId" />
+     <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BirthDate"
+        android:layout_below="@+id/birthDate"
+        android:inputType="date" />
+      <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender"
+        android:text="@string/gender"
+        android:layout_below="@+id/BirthDate" />
+     
+       <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender" 
+        >
+ 
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_male" 
+            android:checked="true" />
+ 
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_female" 
+            />
+ 
+    </RadioGroup>
+    <CheckBox
+        android:id="@+id/chkIos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ios" 
+        android:layout_below="@+id/radioSex"/>
+ 
+    <CheckBox
+        android:id="@+id/chkAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="android"
+        android:checked="true"
+        android:layout_below="@+id/radioSex"
+        android:layout_toRightOf="@+id/chkIos" />
+  <CheckBox
+        android:id="@+id/chkWindows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="windows"
+        android:layout_toRightOf="@+id/chkAndroid"
+        android:layout_below="@+id/radioSex" />
+ <CheckBox
+        android:id="@+id/chkBlackberry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BlackBerry"
+        android:layout_below="@+id/chkIos" />
+ 
+ 
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Save"
+        android:text="@string/save"
+        android:layout_below="@+id/chkBlackberry"
+        android:layout_centerInParent="true"/>
+     
+</RelativeLayout>

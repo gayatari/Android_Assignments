@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+   <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile View!!!"
+        android:id="@+id/profile"
+        android:layout_alignParentTop="true"
+        
+               
+         />
+               
+        
+<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fname"
+        android:id="@+id/FirstName"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/profile"
+        
+               
+         />
+<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstName"
+        android:layout_toRightOf="@+id/FirstName"
+        android:layout_below="@+id/profile"
+                              />
+<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lname"
+        android:id="@+id/LastName"
+        android:layout_below="@+id/FirstName"
+        android:paddingRight="10dp"
+               
+         />
+<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastName"
+        android:layout_toRightOf="@+id/LastName"
+        android:layout_below="@+id/firstName"
+               
+         />
+<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:id="@+id/EmailId"
+        android:layout_below="@+id/LastName"
+        android:paddingRight="10dp"
+               
+         />
+<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailId"
+        android:layout_toRightOf="@+id/EmailId"
+        android:layout_below="@+id/lastName"
+               
+         />
+<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/birth"
+        android:id="@+id/BirthDate"
+        android:layout_below="@+id/EmailId"
+        android:paddingRight="10dp"
+               
+         />
+<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/birthDate"
+        android:layout_toRightOf="@+id/BirthDate"
+        android:layout_below="@+id/emailId"
+               
+         />
+<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:id="@+id/Gender"
+        android:layout_below="@+id/birthDate"
+        android:paddingRight="10dp"
+               
+         />
+
+<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender"
+        android:layout_below="@+id/birthDate"
+        android:layout_toRightOf="@+id/Gender"
+               
+         />
+<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favourite Phone:"
+        android:id="@+id/Phone"
+        android:layout_below="@+id/Gender"
+        android:paddingRight="10dp"
+               
+         />
+
+
+<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone"
+        android:layout_below="@+id/gender"
+        android:layout_toRightOf="@+id/Phone"
+        
+       
+               
+         />
+
+</RelativeLayout>
